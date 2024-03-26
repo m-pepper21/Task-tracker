@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: #011627;
+}
+
+h1 {
+  color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2 {
+  color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  display: flexbox;
+  overflow: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+input,
+textarea {
+  background-color: rgb(223, 157, 150);
+  border: transparent;
+}
+
+#dueDate {
+  background-color: rgb(175, 236, 216);
+}
+
+#voiceContainer {
+  border: 3px solid white;
+  background-color: white;
+  height: 30vh;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#voiceBtn {
+  text-align: center;
+  justify-content: center;
+  border: white;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+#output {
+  width: 80%;
+  height: 10vh;
+  margin-bottom: 10px;
+  background-color: rgb(190, 190, 214);
+  border: rgb(190, 190, 214);
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  background-color: #41ead4;
+}
+
+form {
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px 0px 10px 30px;
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 800px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+thead {
+  background-color: #ff9f1c;
+}
+
+.complete-status {
+  background-color: #267c70;
+  color: #52cfbe;
+}
+.incomplete-status {
+  background-color: #f71735;
+  color: rgb(219, 188, 184);
+}
+.inprogress-status {
+  background-color: #f6cd93;
+  color: #cc8108;
+}
+
+.lowerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.toDo {
+  border: solid #011627;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#filterInput {
+  width: 50%;
+  height: 25px;
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/search");
+  background-position: right;
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#sticky-notes {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+  background-image: url("cork_texture.jpg");
+  background-size: 50%;
+  border-radius: 20px;
+}
+
+/* //#voiceContainer {
+  border: 3px solid white;
+  background-color: white;
+  height: 30vh;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
+
+.sticky-note {
+  width: 150px;
+  position: relative;
+  height: 140px;
+  display: inline-block;
+  background: #ffa;
+  overflow: hidden;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 0 0 0 30px/45px;
+  box-shadow: inset 0 -40px 40px rgba(0, 0, 0, 0.2),
+    inset 0 25px 10px rgba(0, 0, 0, 0.2), 0 5px 6px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Permanent Marker", cursive;
+  line-height: 2em;
+  font-size: 19px;
+  color: black;
+  cursor: move;
+}
+
+#stickyForm {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+textarea {
+  width: 300px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.deleteBtnNote {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  background-color: rgb(200, 200, 28);
+}
+
+.deleteBtnNote:hover {
+  background-color: #cc8108;
+}
+
+#sticky-note {
+  position: relative;
+}
+
+.checkBoxNote {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#noteText {
+  background-color: #ffa;
+}

@@ -1,0 +1,81 @@
+//?  TASK MANAGER PROJECT
+
+//*  Sketch out how I want the layout to look like
+
+//? HTML
+//*     Create form fields:
+// input for task name
+// textarea for task description
+// input for project name
+// calendar picker : date
+// dropdown menu : priority level
+//dropdown menu: status
+// Button :  Add task;
+
+//*     Task List table:
+// table with headers: select (input - type: checkbox), Task, Description, Project, Due Date, Priority, Status, and Delete (button).
+
+//*    Progress Chart Section:
+// div element
+
+//? CSS
+//     Style Forms and buttons
+//     Style Table
+//     Style Progress Chart
+
+//? JavaScript
+
+//* Add Task Functionality:
+// Add a function to handle form submission and capture task data:
+// retrieve data from form inputs
+// Create a Task object with the retrieved data
+// add the new object to the task list array
+//clear form inputs fr the next task entry
+
+// Add event listeners to the "Add Task" button to trigger the addition of tasks to the task list.
+
+//* Display Task List:
+// Define a functions to populate the task list table with task data:
+// call it whenever a new task is added or the page loads (if)
+// Access the table elements in HTML
+//clear existing rows from table
+// loop through the task list array
+// for each task - create a new row in the table with cells for task details
+// append the new row to table
+
+//* Delete Task Functionality:
+// define a function to handle task deletion:
+//identify the task to be deleted - selector?
+// remove the task from the task list array
+//update the task list table
+// Add Eventlisterner when the delete button is clicked.
+
+//* Voice Control Integration:
+// Integrate a speech recognition library (e.g., annyang.js or Web Speech API) to enable voice control functionality.
+// Define voice commands for adding tasks (e.g add task)
+//implement a callback function to handle voice commands for adding tasks:
+//    Extract task details from the recognized speech (e.g., task name, description, project name, priority level, due date).
+//Create a new Task object with the extracted data.
+//Add the new task object to the task list array.
+//Update the task list table and progress chart accordingly.
+
+//* Progress Chart Generation:
+// Write a function to calculate the percentage of completed tasks and incomplete/in-progress tasks:
+// call it whenever a task is added, deleted or the page loads (if)
+// count the number of completed tasks and total tasks
+// calculate the percentage of completed tasks
+//calculate the percentage of incomplete/in progress
+// Use a charting library (e.g., Chart.js) to generate and update the progress chart dynamically based on the percentages
+
+//* Filtering Functionality
+// Add an input field in HTML
+// function to retrieve input and use it to filter task list 
+// add an event listener to the input field to detect changes in input
+//update the display
+
+//* Updating Tasks
+// add event listeners to the table e.g click event:
+    //identify which cell was clicked 
+    // activate editable field 
+    //capture the edited information and update the task object
+    // update the displayed info in the table

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-tracker Project</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Task Tracker</h1>
+    <form id="taskForm">
+      <h4>Add your task here</h4>
+      <div>
+        <label for="taskName">Task</label>
+        <input type="text" id="taskName" />
+        <label for="taskDescription">Description</label>
+        <textarea
+          name="taskDescription"
+          id="taskDescription"
+          cols="30"
+          rows="1"
+        ></textarea>
+        <label for="projectName">Project</label>
+        <input type="text" id="projectName" />
+      </div>
+      <div>
+        <label for="dueDate">Due date</label>
+        <input type="date" id="dueDate" />
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <label for="status">Status</label>
+        <select name="status" id="status">
+          <option value="incomplete">Incomplete</option>
+          <option value="inprogress">In progress</option>
+          <option value="complete">Complete</option>
+        </select>
+      </div>
+      <button class="button" type="submit" id="addTaskBtn">Add</button>
+    </form>
+    <h2>To-Do List</h2>
+    <div class="container">
+      <input
+        type="text"
+        id="filterInput"
+        onkeyup="filterBar()"
+        placeholder="        Search me.."
+      />
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Task</th>
+            <th>Description</th>
+            <th>Project</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody"></tbody>
+      </table>
+      <h2> Voice Tracker</h2>
+    </div>
+    <div id="voiceContainer">
+      <button id="voiceBtn"><img src="micro_phone.jpg" alt="" /></button>
+      <div id="output">
+      </div>
+      <button id="addvoiceTaskBtn">Add Task</button>
+    </div>
+    <div class="lowerContainer">
+      <canvas id="progressChart" width="600" height="300"></canvas>
+      <img
+        class="toDo"
+        src="list.jpg"
+        alt="todolist"
+        width="500"
+        height="300"
+      />
+    </div>
+    <h2> Sticky Notes</h2>
+    <form id="stickyForm">
+      <div id="add-note">
+      </div>
+      <textarea id="noteText" placeholder="Type your note here"></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+    <div id="sticky-notes">
+    </div>
+    </div>
+  </body>
+</html>
