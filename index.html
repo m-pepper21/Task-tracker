@@ -12,20 +12,22 @@
     <h1>Task Tracker</h1>
     <form id="taskForm">
       <h4>Add your task here</h4>
-      <div>
+      <div id="formItems1">
         <label for="taskName">Task</label>
         <input type="text" id="taskName" />
+        <label for="projectName">Project</label>
+        <input type="text" id="projectName" />
+      </div>
+      <div id="formItems2">
         <label for="taskDescription">Description</label>
         <textarea
           name="taskDescription"
           id="taskDescription"
           cols="30"
           rows="1"
-        ></textarea>
-        <label for="projectName">Project</label>
-        <input type="text" id="projectName" />
-      </div>
+        ></textarea></div>
       <div>
+        <div id="formItems3">
         <label for="dueDate">Due date</label>
         <input type="date" id="dueDate" />
         <label for="priority">Priority</label>
@@ -40,6 +42,7 @@
           <option value="inprogress">In progress</option>
           <option value="complete">Complete</option>
         </select>
+      </div>
       </div>
       <button class="button" type="submit" id="addTaskBtn">Add</button>
     </form>
@@ -74,15 +77,16 @@
       </div>
       <button id="addvoiceTaskBtn">Add Task</button>
     </div>
+    <h2> Progress</h2>
     <div class="lowerContainer">
       <canvas id="progressChart" width="600" height="300"></canvas>
-      <img
+      <!-- <img
         class="toDo"
         src="list.jpg"
         alt="todolist"
         width="500"
         height="300"
-      />
+      /> -->
     </div>
     <h2> Sticky Notes</h2>
     <form id="stickyForm">

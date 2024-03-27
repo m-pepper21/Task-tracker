@@ -27,12 +27,15 @@ h2 {
 
 input,
 textarea {
-  background-color: rgb(223, 157, 150);
-  border: transparent;
+  background-color: rgb(175, 236, 216);
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 2px;
+  overflow: auto;
 }
 
 #dueDate {
-  background-color: rgb(175, 236, 216);
+  background-color: rgb(223, 157, 150);
 }
 
 #voiceContainer {
@@ -79,9 +82,17 @@ table {
 
 form {
   background-color: white;
+  display: flexbox;
+  overflow: hidden;
   border-radius: 20px;
   margin: 10px;
   padding: 5px 0px 10px 30px;
+}
+.formItems1,
+.formItems2,
+.formItems3 {
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 canvas {
@@ -89,10 +100,11 @@ canvas {
   padding-right: 0;
   margin-right: 10px;
   margin-top: 10px;
-  width: 800px;
+  width: 00px;
   background-color: white;
   border-radius: 20px;
   padding: 10px;
+  align-self: center;
 }
 
 thead {
@@ -155,18 +167,6 @@ body {
   border-radius: 20px;
 }
 
-/* //#voiceContainer {
-  border: 3px solid white;
-  background-color: white;
-  height: 30vh;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-} */
-
 .sticky-note {
   width: 150px;
   position: relative;
@@ -194,9 +194,8 @@ body {
 }
 
 textarea {
-  width: 300px;
-  padding: 5px;
-  margin-right: 10px;
+  width: 500px;
+  padding: 1px 2px;
 }
 
 button {
